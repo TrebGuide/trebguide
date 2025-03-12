@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<!-- Header -->
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">
-        <h1>TrebGuide</h1>
+        <h1 style="letter-spacing: 8px;">TrebGuide</h1>
       </div>
       <nav>
         <ul class="nav-links">
@@ -40,35 +40,66 @@
     </div>
   </section>
 
-<!-- Tours Section -->
-<section id="tours" class="tours">
+  <!-- Tours Section -->
+  <section id="tours" class="tours">
     <div class="container">
       <h2>Naši Aranžmani</h2>
+      <br>
       <div class="tour-grid">
         <div class="tour-card">
-          <img src="viteske-igre.jpg" alt="Viteške igre">
-          <h3>Viteške igre</h3>
-          <p>Doživite srednjovjekovne viteške igre u autentičnom ambijentu.</p>
+          <div class="tour-card-inner">
+            <div class="tour-card-front">
+              <img src="viteske-igre.jpg" alt="Viteške igre">
+              <h3>Viteške igre</h3>
+              <p>Doživite srednjovjekovne viteške igre u autentičnom ambijentu.</p>
+            </div>
+            <div class="tour-card-back" style="background-image: url('viteske-igre-back.jpg');">
+            </div>
+          </div>
         </div>
         <div class="tour-card">
-          <img src="austrougarske-kule.jpg" alt="Austrougarske kule">
-          <h3>Obilazak austrougarskih kula</h3>
-          <p>Prošetajte kroz istoriju i istražite kule koje su svjedoci prošlih vremena.</p>
+          <div class="tour-card-inner">
+            <div class="tour-card-front">
+              <img src="austrougarske-kule.jpg" alt="Austrougarske kule">
+              <h3>Obilazak austrougarskih kula</h3>
+              <p>Prošetajte kroz istoriju i istražite kule koje su svjedoci prošlih vremena.</p>
+            </div>
+            <div class="tour-card-back" style="background-image: url('austrougarske-kule-back.jpg');">
+            </div>
+          </div>
         </div>
         <div class="tour-card">
-          <img src="grass-to-glass.jpg" alt="From grass to glass">
-          <h3>From grass to glass</h3>
-          <p>Posjetite farme i naučite kako se pravi kajmak i druge mliječne proizvode.</p>
+          <div class="tour-card-inner">
+            <div class="tour-card-front">
+              <img src="grass-to-glass.jpg" alt="From grass to glass">
+              <h3>From grass to glass</h3>
+              <p>Posjetite farme i naučite kako se pravi kajmak i druge mliječne proizvode.</p>
+            </div>
+            <div class="tour-card-back" style="background-image: url('grass-to-glass-back.jpg');">
+            </div>
+          </div>
         </div>
         <div class="tour-card">
-          <img src="vinarija.jpg" alt="Proces pravljenja vina">
-          <h3>Proces pravljenja vina</h3>
-          <p>Učestvujte u pravljenju vina i uživajte u degustaciji lokalnih hercegovačkih vina.</p>
+          <div class="tour-card-inner">
+            <div class="tour-card-front">
+              <img src="vinarija.jpg" alt="Proces pravljenja vina">
+              <h3>Proces pravljenja vina</h3>
+              <p>Učestvujte u pravljenju vina i uživajte u degustaciji lokalnih hercegovačkih vina.</p>
+            </div>
+            <div class="tour-card-back" style="background-image: url('vinarija-back.jpg');">
+            </div>
+          </div>
         </div>
         <div class="tour-card">
-          <img src="musicarenje.jpg" alt="Mušičarenje">
-          <h3>Mušičarenje</h3>
-          <p>Opustite se uz muščarenje na čistim vodama Trebišnjice.</p>
+          <div class="tour-card-inner">
+            <div class="tour-card-front">
+              <img src="musicarenje.jpg" alt="Mušičarenje">
+              <h3>Mušičarenje</h3>
+              <p>Opustite se uz muščarenje na čistim vodama Trebišnjice.</p>
+            </div>
+            <div class="tour-card-back" style="background-image: url('musicarenje-back.jpg');">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -76,10 +107,12 @@
 
   <!-- About Section -->
   <section id="about" class="about">
+    <br><br><br>
     <div class="container">
       <h2>O nama</h2>
       <p>Mi smo agencija posvećena razvoju održivog turizma u Trebinju. Naša misija je da predstavimo grad u novom svjetlu, koristeći moderne trendove u turizmu i podržavajući lokalnu zajednicu.</p>
     </div>
+    <br><br><br>
   </section>
 
   <!-- Contact Section -->
@@ -93,6 +126,7 @@
         <button type="submit">Pošalji</button>
       </form>
     </div>
+    <br><br><br>
   </section>
 
   <!-- Footer -->
@@ -104,7 +138,7 @@
 
   <script>
     const header = document.querySelector('header');
-  
+
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
         header.classList.add('scrolled');
